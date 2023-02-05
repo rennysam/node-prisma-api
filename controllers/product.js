@@ -9,12 +9,12 @@ exports.getAllProductsController = async (req, res, next) => {
   if (!product) {
     return res.status(500).json({
       success: false,
-      message: "Failed to get books.",
+      message: "Failed to get student information.",
     });
   }
   res.status(200).json({
     success: true,
-    message: "The books were found successfully.",
+    message: "Student information were found successfully.",
     data: product,
   });
 };
@@ -25,7 +25,7 @@ exports.createProductController = async (req, res, next) => {
   if (!productData) {
     return res.status(400).json({
       success: false,
-      message: "Please add a book title.",
+      message: "Please check the form again.",
     });
   }
 
@@ -34,13 +34,13 @@ exports.createProductController = async (req, res, next) => {
   if (!product) {
     return res.status(500).json({
       success: false,
-      message: "Failed to create book.",
+      message: "Failed to submit application.",
     });
   }
 
   res.status(201).json({
     success: true,
-    message: "The book was created successfully.",
+    message: "Application submitted successfully.",
     data: product,
   });
 };
