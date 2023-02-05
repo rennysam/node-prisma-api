@@ -1,4 +1,6 @@
-const productRouter = require("../routes/product");
+
+const formRouter = require("../routes/form");
+
 const express = require("express");
 
 /**
@@ -7,7 +9,10 @@ const express = require("express");
  * @param {express.Application} app
  */
 const initRoutes = (app) => {
-  app.use("/product", productRouter);
+
+  app.use("/form", formRouter);
+
+
 };
 
 module.exports = initRoutes;
