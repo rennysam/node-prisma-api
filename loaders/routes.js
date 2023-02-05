@@ -1,4 +1,4 @@
-const booksRouter = require("../routes/book");
+const productRouter = require("../routes/product");
 const express = require("express");
 
 /**
@@ -7,7 +7,7 @@ const express = require("express");
  * @param {express.Application} app
  */
 const initRoutes = (app) => {
-  app.use("/books", booksRouter);
+  app.use("/product", productRouter);
 };
 
 module.exports = initRoutes;
