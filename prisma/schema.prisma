@@ -14,7 +14,7 @@ model Form {
   firstName String 
   middleName String 
   lastName String 
-  dob String 
+  dob String
   age Int @default(0)
   gender String
   passportNumber Int @default(0)
