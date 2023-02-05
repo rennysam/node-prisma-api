@@ -4,6 +4,9 @@ const {
 } = require("../controllers/form");
 const router = require("express").Router({ mergeParams: true });
 
-router.get(getAllStudentApplController).post(createStudentApplController);
+router
+  .route("/")
+  .get(getAllStudentApplController)
+  .post(createStudentApplController);
 
 module.exports = router;

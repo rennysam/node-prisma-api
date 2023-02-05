@@ -4,7 +4,6 @@ const {
 } = require("../services/form.js");
 
 exports.getAllStudentApplController = async (req, res, next) => {
-  res.send("heloloooooo");
   const applForms = await getAllStudentApplService();
 
   if (!applForms) {
