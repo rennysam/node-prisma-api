@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-const booksRouter = require("../routes/book");
-=======
 const formRouter = require("../routes/form");
->>>>>>> Stashed changes
 const express = require("express");
 
 /**
@@ -11,11 +7,7 @@ const express = require("express");
  * @param {express.Application} app
  */
 const initRoutes = (app) => {
-<<<<<<< Updated upstream
-  app.use("/books", booksRouter);
-=======
   app.use("/form", formRouter);
->>>>>>> Stashed changes
 };
 
 module.exports = initRoutes;
