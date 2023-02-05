@@ -7,12 +7,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-<<<<<<< Updated upstream
-model books {
-  id          Int     @id @default(autoincrement())
-  title       String  @db.VarChar(255)
-  description String? @db.VarChar(255)
-=======
 model Form {
   id Int @id @default(autoincrement())
   firstName String 
@@ -23,5 +17,4 @@ model Form {
   gender String
   passportNumber Int @default(0)
  
->>>>>>> Stashed changes
 }
